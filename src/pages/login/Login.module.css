@@ -1,0 +1,56 @@
+.paper {
+  padding: 5px;
+  width: 35%;
+  height: 60%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  margin: 10px 0 !important;
+  width: 100%;
+}
+.form1 {
+  margin: 10px 0;
+  margin-bottom: 4px;
+  width: 100%;
+}
+.icon {
+  margin-left: 15px;
+}
+.h3 {
+  margin: 0px;
+}
+.signUp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.txtField {
+}
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 11px;
+}
+.bg {
+  height: 100vh;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/imgs/loginScreen/image 38.png") no-repeat center center/cover; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .paper {
+    width: 90%;
+    margin: auto;
+  }
+}
