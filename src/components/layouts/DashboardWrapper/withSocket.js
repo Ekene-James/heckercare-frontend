@@ -1,22 +1,8 @@
 import { io, Manager } from "socket.io-client";
 
 function withSocket() {
-  // const manager = new Manager("ws://d2r4k9hro8158.cloudfront.net/hms", {
-  //   reconnectionDelayMax: 10000,
-  //   query: {
-  //     "my-key": "my-value",
-  //   },
-  // });
-  // const socket = manager.socket("/");
-
-  const socket = io("https://api.heckercare.com/mobile/hms", {
+  const socket = io(process.env.REACT_APP_WEB_SOCKET_URL, {
     reconnectionDelayMax: 10000,
-    // auth: {
-    //   token: "123"
-    // },
-    // query: {
-    //   "my-key": "my-value"
-    // }
   });
 
   socket.on("error", (err) => {

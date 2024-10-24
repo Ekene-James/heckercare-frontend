@@ -1,10 +1,8 @@
 import axios from "axios";
 import secureLocalStorage from "react-secure-storage";
 
-// const baseURL =
-//   "http://hms-env.eba-y72mfqes.us-east-1.elasticbeanstalk.com/api/v1";
-export const baseURL = "https://api.heckercare.com/api/v1"; // backend url
-// export const baseURL = "https://api-bioefficient.heckercare.com/api/v1"; // backend url
+export const baseURL = process.env.REACT_APP_BACKEND_URL; // backend url
+
 const client = axios.create({ baseURL });
 let cancelToken;
 export const request = async ({ ...options }) => {

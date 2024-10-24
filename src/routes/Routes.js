@@ -85,7 +85,7 @@ import Permissions from "pages/settings/permissions";
 import ChangePassword from "pages/login/ChangePassword";
 import ResetPassword from "pages/resetPassword/ResetPassword";
 import EditPatient from "pages/patients/singlePatientsHome/EditPatient";
-import { Landing } from "pages/landing/landing";
+
 import TransactionTypes from "pages/accounting/TransactionTypes";
 import Radiology from "pages/patients/singlePatientsHome/radiology/Radiology";
 import RadioOverview from "pages/radiology/RadioOverview";
@@ -98,8 +98,7 @@ import SampleStandards from "pages/settings/SampleStandards";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/auth" element={<PublicRoutes />}>
+      <Route path="/" element={<PublicRoutes />}>
         <Route index element={<Login />} />
 
         <Route path="recover-password" element={<RecoverPassword />} />

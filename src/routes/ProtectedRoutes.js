@@ -87,8 +87,6 @@ const AuthenticatedRoutes = () => {
       dispatch(setCurrentUser({ role, ...user }));
     }
   }, []);
-  // console.log(authorisedRoutes);
-  // // console.log(authorisedModules);
 
   const reReoute = React.useCallback(() => {
     if (isHasDashboard) {
